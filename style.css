@@ -14,15 +14,14 @@ body {
   font-family: "Roboto Mono", monospace;
   line-height: 1;
   font-weight: 400;
-}
-
-.main-section {
   background-image: linear-gradient(
       to right bottom,
-      rgba(0, 0, 0, 0.8),
-      rgba(0, 0, 0, 0.8)
+      rgba(0, 0, 0, 0.92),
+      rgba(0, 0, 0, 0.92)
     ),
     url(images/sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main-section-div {
@@ -83,4 +82,35 @@ body {
   stroke: #fff;
   height: 48px;
   width: 48px;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-section-div {
+    width: 40rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 2rem;
+  }
+
+  .primary-heading {
+    font-size: 6rem;
+  }
+
+  .logo-name {
+    font-size: 4rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .main-heading-text {
+    font-size: 2rem;
+    margin: 1rem 0 0 0;
+  }
+
+  .logo-img {
+    width: 100px;
+  }
+
+  .btn-div {
+    padding-bottom: 2rem;
+  }
 }
