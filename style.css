@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+/**************************/
+/* MAIN SECTION */
+/**************************/
+
 body {
   font-family: "Roboto Mono", monospace;
   line-height: 1;
@@ -19,23 +23,24 @@ body {
       rgba(0, 0, 0, 0.92),
       rgba(0, 0, 0, 0.92)
     ),
-    url(images/sky.jpg);
+    url(images/dark.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
 }
 
 .main-section-div {
   height: 100vh;
-  width: 130rem;
+  max-width: 130rem;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 6rem;
 }
 
 .logo-img {
-  width: 70%;
+  width: 90%;
+  padding-left: 2rem;
 }
 
 .primary-heading {
@@ -66,15 +71,19 @@ body {
 }
 
 .margin-left-sm {
-  margin-left: 10rem;
+  margin-left: 6rem;
 }
 
-.btn-div {
+/**************************/
+/* LOGOS */
+/**************************/
+
+.btn-box {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10rem;
-  margin-left: -10rem;
+  /* margin-left: -10rem; */
 }
 
 .btn {
@@ -84,33 +93,39 @@ body {
   width: 48px;
 }
 
-@media only screen and (max-width: 600px) {
+/**************************/
+/* RESPONSIVE DESIGN */
+/**************************/
+
+@media (max-width: 1000px) {
+  body {
+    background-size: auto;
+  }
+
   .main-section-div {
-    width: 40rem;
+    margin: 0 6rem;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    row-gap: 2rem;
-  }
-
-  .primary-heading {
-    font-size: 6rem;
-  }
-
-  .logo-name {
-    font-size: 4rem;
-    margin: 1rem 0 0 0;
-  }
-
-  .main-heading-text {
-    font-size: 2rem;
-    margin: 1rem 0 0 0;
+    grid-template-rows: 50% 1fr;
+    justify-items: center;
+    row-gap: 0;
   }
 
   .logo-img {
-    width: 100px;
+    margin-left: 4rem;
+    padding: 0;
   }
 
-  .btn-div {
-    padding-bottom: 2rem;
+  .primary-heading {
+    font-size: 8rem;
+  }
+
+  .logo-name {
+    font-size: 6rem;
+    margin: 2rem 0 0 0;
+  }
+
+  .main-heading-text {
+    font-size: 4rem;
+    margin-top: 0.5rem;
   }
 }
