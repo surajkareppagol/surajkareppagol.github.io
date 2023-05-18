@@ -10,6 +10,10 @@
   align-items: center;
   justify-content: center;
   gap: 10rem;
+
+  @include respondTo(phone) {
+    padding: 4rem;
+  }
 }
 
 .form-main-container {
@@ -35,6 +39,10 @@
     margin-bottom: 0.6rem;
     font-size: 2.2rem;
     font-weight: 500;
+
+    @include respondTo(phone) {
+      margin-bottom: 0.6rem 2rem;
+    }
   }
 
   &__input {

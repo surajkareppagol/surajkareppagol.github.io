@@ -34,6 +34,10 @@
       display: flex;
       flex-direction: column;
       transform: rotate(-0.4deg);
+
+      @include respondTo(phone) {
+        width: 24%;
+      }
     }
   }
 }
@@ -48,6 +52,10 @@
   border-radius: 11px;
   margin-top: 4rem;
   box-shadow: 0.6rem 0.6rem 1rem rgba($color-black, 0.4);
+
+  @include respondTo(phone) {
+    margin: 4rem;
+  }
 
   &__cell {
     padding: 1rem 2rem;
@@ -79,6 +87,10 @@
     display: inline-block;
     font-size: 3.6rem;
     padding: 2rem 0;
+
+    @include respondTo(phone) {
+      font-size: 2.6rem;
+    }
   }
 
   &__text-container {
@@ -87,12 +99,17 @@
   &__description {
     color: #333;
     font-size: 2.6rem;
+
+    @include respondTo(phone) {
+      font-size: 1.8rem;
+    }
   }
 
   &__tool-container {
     display: flex;
     align-items: center;
     gap: 2rem;
+    flex-wrap: wrap;
   }
 
   &__tools-heading {
@@ -102,11 +119,22 @@
     display: inline-block;
     font-size: 2.6rem;
     padding: 1rem 0;
+
+    @include respondTo(phone) {
+      font-size: 2rem;
+    }
   }
 
   &__tool {
-    font-size: 48px;
-    color: #333;
+    @include respondTo(phone) {
+      width: 60%;
+    }
+
+    &--used {
+      @include respondTo(phone) {
+        width: 30%;
+      }
+    }
 
     &--link {
       transition: all 0.2s;
@@ -125,6 +153,10 @@
     font-size: 2.6rem;
     padding: 1rem 0;
     margin-top: 2rem;
+
+    @include respondTo(phone) {
+      font-size: 2rem;
+    }
   }
 
   &__repo {

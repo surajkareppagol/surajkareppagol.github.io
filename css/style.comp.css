@@ -8,6 +8,42 @@
  *  EOF
  *********************************************/
 /*********************************************
+ *  Media Query
+ *********************************************/
+/*********************************************
+ *  EOF
+ *********************************************/
+/*********************************************
+ *  Base
+ *********************************************/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 37.5%; } }
+
+body {
+  background-image: linear-gradient(96deg, #0000ffff, #2ad4ffff); }
+
+*:link:focus {
+  outline: none; }
+
+/*********************************************
+ *  EOF
+ *********************************************/
+.u-center-text {
+  text-align: center; }
+
+.u-margin-top-medium {
+  margin-top: 2rem; }
+
+/*********************************************
  *  Typography
  *********************************************/
 body {
@@ -46,37 +82,26 @@ body {
  *  EOF
  *********************************************/
 /*********************************************
- *  Base
- *********************************************/
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%;
-  box-sizing: border-box; }
-
-body {
-  background-image: linear-gradient(96deg, #0000ffff, #2ad4ffff); }
-
-*:link:focus {
-  outline: none; }
-
-/*********************************************
- *  EOF
- *********************************************/
-.u-center-text {
-  text-align: center; }
-
-.u-margin-top-medium {
-  margin-top: 2rem; }
-
-/*********************************************
  *  Images
  *********************************************/
-.img-container__img {
-  width: 80%; }
+.img-container {
+  animation: moveUpAndDown 3s infinite alternate linear; }
+  .img-container__img {
+    width: 80%; }
+
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(20px); }
+  20% {
+    transform: translateY(16px); }
+  40% {
+    transform: translateY(12px); }
+  60% {
+    transform: translateY(8px); }
+  80% {
+    transform: translateY(4px); }
+  100% {
+    transform: translateY(0px); } }
 
 /*********************************************
  *  EOF
@@ -88,6 +113,9 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   height: 90vh; }
+  @media (max-width: 37.5em) {
+    .section-main {
+      padding: 6rem 4rem 0 4rem; } }
 
 .section-container {
   display: flex;
@@ -121,6 +149,10 @@ body {
   max-width: 120rem;
   padding: 2rem 0; }
 
+@media (max-width: 37.5em) {
+  .nav-container {
+    padding: 0 4rem; } }
+
 .nav-container__ul {
   display: flex;
   align-items: center;
@@ -134,12 +166,9 @@ body {
   color: #fff;
   font-size: 2.6rem;
   text-decoration: none; }
-
-.nav-container__hr {
-  width: 36%;
-  margin-left: 65%;
-  margin-top: 1rem;
-  border: 1.8px solid #fff; }
+  @media (max-width: 37.5em) {
+    .nav-container__link {
+      font-size: 2.2rem; } }
 
 .nav-container::after {
   content: "";
@@ -152,6 +181,9 @@ body {
   left: 56%;
   transform: rotate(-0.4deg);
   border-radius: 11px; }
+  @media (max-width: 37.5em) {
+    .nav-container::after {
+      left: 60%; } }
 
 /*********************************************
  *  EOF
@@ -187,6 +219,9 @@ body {
       display: flex;
       flex-direction: column;
       transform: rotate(-0.4deg); }
+      @media (max-width: 37.5em) {
+        .projects-container__p::after {
+          width: 24%; } }
 
 .project-container {
   display: grid;
@@ -198,6 +233,9 @@ body {
   border-radius: 11px;
   margin-top: 4rem;
   box-shadow: 0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.4); }
+  @media (max-width: 37.5em) {
+    .project-container {
+      margin: 4rem; } }
   .project-container__cell {
     padding: 1rem 2rem;
     background-color: #fff;
@@ -217,13 +255,20 @@ body {
     display: inline-block;
     font-size: 3.6rem;
     padding: 2rem 0; }
+    @media (max-width: 37.5em) {
+      .project-container__heading {
+        font-size: 2.6rem; } }
   .project-container__description {
     color: #333;
     font-size: 2.6rem; }
+    @media (max-width: 37.5em) {
+      .project-container__description {
+        font-size: 1.8rem; } }
   .project-container__tool-container {
     display: flex;
     align-items: center;
-    gap: 2rem; }
+    gap: 2rem;
+    flex-wrap: wrap; }
   .project-container__tools-heading {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 255, 0.8), rgba(42, 212, 255, 0.8));
     -webkit-background-clip: text;
@@ -231,13 +276,19 @@ body {
     display: inline-block;
     font-size: 2.6rem;
     padding: 1rem 0; }
-  .project-container__tool {
-    font-size: 48px;
-    color: #333; }
-    .project-container__tool--link {
-      transition: all 0.2s; }
-      .project-container__tool--link:hover {
-        transform: translateY(-2px); }
+    @media (max-width: 37.5em) {
+      .project-container__tools-heading {
+        font-size: 2rem; } }
+  @media (max-width: 37.5em) {
+    .project-container__tool {
+      width: 60%; } }
+  @media (max-width: 37.5em) {
+    .project-container__tool--used {
+      width: 30%; } }
+  .project-container__tool--link {
+    transition: all 0.2s; }
+    .project-container__tool--link:hover {
+      transform: translateY(-2px); }
   .project-container__repo-heading {
     background-image: linear-gradient(to bottom right, rgba(0, 0, 255, 0.8), rgba(42, 212, 255, 0.8));
     -webkit-background-clip: text;
@@ -246,6 +297,9 @@ body {
     font-size: 2.6rem;
     padding: 1rem 0;
     margin-top: 2rem; }
+    @media (max-width: 37.5em) {
+      .project-container__repo-heading {
+        font-size: 2rem; } }
   .project-container__repo {
     display: flex;
     align-items: center;
@@ -265,6 +319,9 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10rem; }
+  @media (max-width: 37.5em) {
+    .contact-container {
+      padding: 4rem; } }
 
 .form-main-container {
   flex: 0 0 40%; }
@@ -285,6 +342,9 @@ body {
     margin-bottom: 0.6rem;
     font-size: 2.2rem;
     font-weight: 500; }
+    @media (max-width: 37.5em) {
+      .form__label {
+        margin-bottom: 0.6rem 2rem; } }
   .form__input {
     border: none;
     border-left: 4px solid rgba(0, 0, 255, 0.8);

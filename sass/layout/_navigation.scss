@@ -8,6 +8,10 @@
 }
 
 .nav-container {
+  @include respondTo(phone) {
+    padding: 0 4rem;
+  }
+
   &__ul {
     display: flex;
     align-items: center;
@@ -23,14 +27,10 @@
     color: $color-white;
     font-size: 2.6rem;
     text-decoration: none;
-  }
 
-  &__hr {
-    width: 36%;
-    margin-left: 65%;
-    margin-top: 1rem;
-    border: 1.8px solid $color-white;
-    // transform: rotate(-0.4deg);
+    @include respondTo(phone) {
+      font-size: 2.2rem;
+    }
   }
 
   &::after {
@@ -44,6 +44,10 @@
     left: 56%;
     transform: rotate(-0.4deg);
     border-radius: 11px;
+
+    @include respondTo(phone) {
+      left: 60%;
+    }
   }
 }
 
