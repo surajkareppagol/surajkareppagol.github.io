@@ -1,0 +1,29 @@
+{
+  "name": "dev-shadoww.github.io",
+  "version": "1.0.0",
+  "description": "Welcome To My Personal Page",
+  "main": "index.js",
+  "scripts": {
+    "dev-server": "live-server",
+    "watch:scss": "node-sass sass/main.scss css/style.comp.css -w",
+    "start": "npm-run-parallel dev-server watch:scss",
+    "compile:css": "node-sass css/style.comp.css css/style.comp.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-shadoww/dev-shadoww.github.io.git"
+  },
+  "keywords": [
+    "Personal_Page"
+  ],
+  "author": "shadoww",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-shadoww/dev-shadoww.github.io/issues"
+  },
+  "homepage": "https://github.com/dev-shadoww/dev-shadoww.github.io#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "npm-run-parallel": "^0.6.0"
+  }
+}

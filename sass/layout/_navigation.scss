@@ -1,0 +1,52 @@
+/*********************************************
+ *  Navigation
+ *********************************************/
+
+.header-container {
+  max-width: 120rem;
+  padding: 2rem 0;
+}
+
+.nav-container {
+  &__ul {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 2rem;
+  }
+
+  &__li {
+    list-style: none;
+  }
+
+  &__link {
+    color: $color-white;
+    font-size: 2.6rem;
+    text-decoration: none;
+  }
+
+  &__hr {
+    width: 36%;
+    margin-left: 65%;
+    margin-top: 1rem;
+    border: 1.8px solid $color-white;
+    // transform: rotate(-0.4deg);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 36%;
+    height: 0.4%;
+    margin-top: 1rem;
+    background-color: $color-white;
+    position: absolute;
+    left: 56%;
+    transform: rotate(-0.4deg);
+    border-radius: 11px;
+  }
+}
+
+/*********************************************
+ *  EOF
+ *********************************************/

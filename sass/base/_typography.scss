@@ -1,0 +1,55 @@
+/*********************************************
+ *  Typography
+ *********************************************/
+body {
+  font-family: "JetBrains Mono", monospace;
+  text-transform: capitalize;
+}
+
+.text-container {
+  color: $color-white;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__span {
+    display: block;
+
+    &--1 {
+      font-size: 8rem;
+      transform: rotate(-4deg);
+      margin-bottom: -1rem;
+    }
+
+    &--2 {
+      font-size: 14rem;
+      transform: rotate(4deg);
+      margin-left: 4rem;
+      margin-bottom: -4rem;
+    }
+
+    &--3 {
+      font-size: 9rem;
+      transform: rotate(-1deg);
+      font-weight: 600;
+    }
+  }
+}
+
+.additional-text-container {
+  &__text {
+    font-size: 2.8rem;
+    transform: rotate(10deg);
+    padding-top: 8rem;
+
+    & span {
+      display: block;
+    }
+  }
+}
+
+/*********************************************
+ *  EOF
+ *********************************************/
