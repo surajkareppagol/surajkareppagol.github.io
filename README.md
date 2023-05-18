@@ -1,9 +1,7 @@
 # SHADOWW
 
-This is a simple webpage created using html and css. The icons are from **[ionicons](https://ionic.io/ionicons)** and the background image is designed by me.
+Badges from [Ileriayo/markdown-badges](https://github.com/Ileriayo/markdown-badges), icons from [ion-icons](https://ionic.io/ionicons).
 
-Now it is **Responsive** finally. But still not perfect though.
+**[SHADOWW, WEBPAGE](https://dev-shadoww.github.io/)**
 
-**[SHADOWW WEBPAGE](https://dev-shadoww.github.io/)**
-
-![webpage](images/web.png)
+![webpage](assets/images/webpage.png)
