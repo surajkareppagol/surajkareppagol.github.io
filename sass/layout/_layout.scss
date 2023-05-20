@@ -5,10 +5,10 @@
 .section-main {
   max-width: 120rem;
   margin: 0 auto;
-  height: 90vh;
+  padding: 0 0 4rem 0;
 
   @include respondTo(phone) {
-    padding: 6rem 4rem 0 4rem;
+    padding: 4rem 4.2rem;
   }
 }
 
