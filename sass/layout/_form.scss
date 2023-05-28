@@ -86,21 +86,22 @@
     position: relative;
 
     &--message {
+      color: #333;
+      background-color: rgba($color-background-blue-primary, 0.8);
+      padding: 1rem 1rem;
+      color: $color-white;
+      border-radius: 11px;
+      font-size: 1.4rem;
+      font-weight: 700;
+      display: none;
+
       position: absolute;
       top: 12%;
       left: 26%;
-      color: #333;
-      background-color: $color-white;
-      padding: 1rem 1rem;
-      border: 1px solid rgba($color-background-blue-primary, 0.8);
-      border-radius: 6px;
-      font-size: 1.4rem;
-      font-weight: 600;
-      width: 50%;
-      display: none;
 
       @include respondTo(phone) {
         display: block;
+        top: 24%;
       }
     }
 

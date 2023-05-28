@@ -23,6 +23,10 @@ body {
     $color-background-blue-primary,
     $color-background-blue-secondary
   );
+
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 *:link {

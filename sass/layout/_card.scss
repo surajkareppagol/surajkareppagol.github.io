@@ -24,20 +24,21 @@
     display: inline-block;
     text-align: center;
 
+    position: relative;
+
     &::after {
       content: "";
       background-image: $color-blue-gradient;
       height: 0.4%;
-      width: 100%;
-      position: absolute;
       border-radius: 11px;
-      display: flex;
-      flex-direction: column;
       transform: rotate(-0.4deg);
 
-      @include respondTo(phone) {
-        width: 24%;
-      }
+      position: absolute;
+      bottom: -10%;
+      left: 0;
+
+      width: 100%;
+      height: 6%;
     }
   }
 }
