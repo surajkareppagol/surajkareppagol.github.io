@@ -10,6 +10,30 @@
 
 html {
   font-size: 62.5%;
+
+  @include responsive-size(large) {
+    font-size: 50%;
+  }
+
+  @include responsive-size(medium) {
+    font-size: 40%;
+  }
+
+  @include responsive-size(special-800) {
+    font-size: 30%;
+  }
+
+  @include responsive-size(small) {
+    font-size: 28%;
+  }
+
+  @include responsive-size(special-550) {
+    font-size: 24%;
+  }
+
+  @include responsive-size(special-460) {
+    font-size: 20%;
+  }
 }
 
 body {

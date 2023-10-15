@@ -16,6 +16,10 @@
   margin-bottom: 4rem;
 
   text-align: center;
+
+  @include responsive-size(small) {
+    max-width: 110rem;
+  }
 }
 
 .skill-container {
@@ -26,6 +30,15 @@
   grid-template-columns: repeat(3, 1fr);
 
   gap: 2rem;
+
+  @include responsive-size(special-800) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  @include responsive-size(small) {
+    max-width: 110rem;
+  }
 }
 
 .project-container {
@@ -36,6 +49,10 @@
   grid-template-columns: repeat(1, 1fr);
 
   row-gap: 2rem;
+
+  @include responsive-size(small) {
+    max-width: 110rem;
+  }
 }
 
 /**************************************/

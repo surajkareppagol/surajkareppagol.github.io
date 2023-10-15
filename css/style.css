@@ -8,9 +8,55 @@
 /* EOF */
 /**************************************/
 /**************************************/
-/* _typography.scss */
+/* _mixins.scss */
+/**************************************/
+/**************************************/
+/* EOF */
+/**************************************/
+/**************************************/
+/* _base.css */
 /**************************************/
 @import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 1250px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 1000px) {
+    html {
+      font-size: 40%; } }
+  @media (max-width: 800px) {
+    html {
+      font-size: 30%; } }
+  @media (max-width: 600px) {
+    html {
+      font-size: 28%; } }
+  @media (max-width: 550px) {
+    html {
+      font-size: 24%; } }
+  @media (max-width: 460px) {
+    html {
+      font-size: 20%; } }
+
+body {
+  box-sizing: border-box;
+  color: #fff;
+  background-image: linear-gradient(to bottom right, #2c4ee7, #480fb1); }
+
+body::-webkit-scrollbar {
+  display: none; }
+
+/**************************************/
+/* EOF */
+/**************************************/
+/**************************************/
+/* _typography.scss */
+/**************************************/
 body {
   font-family: "Gabarito", sans-serif;
   text-transform: capitalize; }
@@ -37,28 +83,6 @@ body {
   text-decoration: underline;
   display: inline-block;
   border-radius: 11px; }
-
-/**************************************/
-/* EOF */
-/**************************************/
-/**************************************/
-/* _base.css */
-/**************************************/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
-
-html {
-  font-size: 62.5%; }
-
-body {
-  box-sizing: border-box;
-  color: #fff;
-  background-image: linear-gradient(to bottom right, #2c4ee7, #480fb1); }
-
-body::-webkit-scrollbar {
-  display: none; }
 
 /**************************************/
 /* EOF */
@@ -108,12 +132,18 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center; }
+  @media (max-width: 1250px) {
+    .project-card {
+      column-gap: 2.8rem; } }
   .project-card__project-title p {
     font-size: 4rem;
     font-weight: 500;
     text-transform: capitalize; }
   .project-card__img {
     border-radius: 11px; }
+    @media (max-width: 800px) {
+      .project-card__img {
+        width: 100%; } }
   .project-card__content-main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -180,6 +210,9 @@ body::-webkit-scrollbar {
   max-width: 120rem;
   margin: 0 auto;
   padding: 2rem 0; }
+  @media (max-width: 600px) {
+    .nav {
+      max-width: 110rem; } }
 
 .nav__links {
   display: flex;
@@ -213,6 +246,11 @@ body::-webkit-scrollbar {
   margin: 0 auto;
   margin-bottom: 4rem;
   text-align: center; }
+  @media (max-width: 600px) {
+    .section-skill__heading,
+    .section-projects__heading,
+    .footer__heading {
+      max-width: 110rem; } }
 
 .skill-container {
   max-width: 120rem;
@@ -220,6 +258,13 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem; }
+  @media (max-width: 800px) {
+    .skill-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem; } }
+  @media (max-width: 600px) {
+    .skill-container {
+      max-width: 110rem; } }
 
 .project-container {
   max-width: 120rem;
@@ -227,6 +272,9 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   row-gap: 2rem; }
+  @media (max-width: 600px) {
+    .project-container {
+      max-width: 110rem; } }
 
 /**************************************/
 /* EOF */
@@ -241,6 +289,9 @@ body::-webkit-scrollbar {
     grid-template-columns: repeat(2, 1fr);
     max-width: 120rem;
     margin: 0 auto; }
+    @media (max-width: 600px) {
+      .footer__container {
+        max-width: 110rem; } }
   .footer__contact-container {
     padding: 1rem 0;
     border-radius: 11px; }
@@ -256,7 +307,6 @@ body::-webkit-scrollbar {
     background-color: #fff;
     font-size: 2.6rem;
     font-family: inherit;
-    text-transform: capitalize;
     color: #231696;
     width: 80%;
     border-radius: 6px;

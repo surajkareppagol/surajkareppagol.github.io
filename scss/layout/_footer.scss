@@ -11,10 +11,13 @@
 
     max-width: 120rem;
     margin: 0 auto;
+
+    @include responsive-size(small) {
+      max-width: 110rem;
+    }
   }
 
   &__contact-container {
-    // background-color: $color-white;
     padding: 1rem 0;
 
     border-radius: 11px;
@@ -36,7 +39,6 @@
 
     font-size: 2.6rem;
     font-family: inherit;
-    text-transform: capitalize;
     color: $text-color-gradient;
     width: 80%;
     border-radius: 6px;

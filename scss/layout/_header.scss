@@ -36,6 +36,10 @@
   margin: 0 auto;
 
   padding: 2rem 0;
+
+  @include responsive-size(small) {
+    max-width: 110rem;
+  }
 }
 
 .nav__links {

@@ -1,5 +1,5 @@
-# SHADOWW
+# surajkareppagol.github.io
 
-Badges from [Ileriayo/markdown-badges](https://github.com/Ileriayo/markdown-badges), icons from [ion-icons](https://ionic.io/ionicons).
+Built with web technologies.
 
-![webpage](./output.gif)
+![webpage](https://raw.githubusercontent.com/surajkareppagol/assets-for-projects/main/website.gif)

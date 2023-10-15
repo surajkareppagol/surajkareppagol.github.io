@@ -183,6 +183,19 @@ const projectData = [
       },
     ],
   },
+  {
+    title: "Pix Creator App",
+    img: "https://raw.githubusercontent.com/surajkareppagol/assets-for-projects/main/pix_creator_app.gif",
+    alt: "Pix Creator App Image",
+    about: "An Easy To Use Pixel Art Creator Built For Android.",
+    tools: ["Java"],
+    links: [
+      {
+        link: "GitHub",
+        url: "https://github.com/surajkareppagol/pix-creator-app",
+      },
+    ],
+  },
 ];
 
 export default projectData;

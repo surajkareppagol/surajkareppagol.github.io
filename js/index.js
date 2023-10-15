@@ -28,7 +28,9 @@ let skillContent = skillData.map((skill) => {
         ${
           skill.projects === "none"
             ? "🧑‍💻 Tool"
-            : `🛠️ ${skill.projects} Projects`
+            : `🛠️ ${skill.projects} ${
+                parseInt(skill.projects) === 1 ? "Project" : "Projects"
+              }`
         }
         </p>
         <p class="skill-card__tag">${
