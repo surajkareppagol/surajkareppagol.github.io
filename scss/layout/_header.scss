@@ -1,0 +1,61 @@
+/**************************************/
+/* _header.scss */
+/**************************************/
+
+.header {
+  &__container--content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__scroll {
+    margin-top: 6rem;
+  }
+}
+
+.icon {
+  &__scroll {
+    fill: $text-color-gradient;
+    width: 8rem;
+    background-color: $color-white;
+    border-radius: 99px;
+    transition: all 0.2s;
+
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+  }
+}
+
+.nav {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  padding: 2rem 0;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.nav__link {
+  font-size: 2.8rem;
+  text-decoration: none;
+  letter-spacing: 0.6px;
+  background-color: $color-white;
+  color: $text-color-gradient;
+
+  border-radius: 6px;
+  padding: 0 1rem;
+}
+
+/**************************************/
+/* EOF */
+/**************************************/

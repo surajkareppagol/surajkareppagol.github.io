@@ -1,0 +1,43 @@
+/**************************************/
+/* _section.scss */
+/**************************************/
+
+.section-skill,
+.section-projects {
+  padding: 6rem 0;
+}
+
+.section-skill__heading,
+.section-projects__heading,
+.footer__heading {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  margin-bottom: 4rem;
+
+  text-align: center;
+}
+
+.skill-container {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 2rem;
+}
+
+.project-container {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
+  row-gap: 2rem;
+}
+
+/**************************************/
+/* EOF */
+/**************************************/

@@ -1,28 +1,29 @@
 {
-  "name": "dev-shadoww.github.io",
+  "name": "surajkareppagol.github.io",
   "version": "1.0.0",
   "description": "Welcome To My Personal Page",
   "main": "index.js",
   "scripts": {
-    "dev-server": "live-server",
-    "watch:scss": "node-sass sass/main.scss css/style.comp.css -w",
-    "start": "npm-run-all --parallel dev-server watch:scss",
-    "compile:css": "node-sass css/style.comp.css css/style.comp.css --output-style compressed"
+    "watch-css": "node-sass scss/main.scss css/style.css --watch",
+    "local-server": "live-server",
+    "start": "clear && npm-run-all --parallel watch-css local-server",
+    "build-css": "node-sass scss/main.scss css/style.css --output-style compressed"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dev-shadoww/dev-shadoww.github.io.git"
+    "url": "git+https://github.com/surajkareppagol/surajkareppagol.github.io.git"
   },
   "keywords": [
     "Personal_Page"
   ],
-  "author": "shadoww",
+  "author": "Suraj Kareppagol",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dev-shadoww/dev-shadoww.github.io/issues"
+    "url": "https://github.com/surajkareppagol/surajkareppagol.github.io/issues"
   },
-  "homepage": "https://github.com/dev-shadoww/dev-shadoww.github.io#readme",
+  "homepage": "https://github.com/surajkareppagol/surajkareppagol.github.io#readme",
   "devDependencies": {
+    "live-server": "^1.2.2",
     "node-sass": "^9.0.0",
     "npm-run-all": "^4.1.5"
   }

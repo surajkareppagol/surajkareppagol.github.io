@@ -1,0 +1,33 @@
+/**************************************/
+/* _base.css */
+/**************************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+
+  color: #fff;
+
+  background-image: linear-gradient(
+    to bottom right,
+    $gradient-color-1,
+    $gradient-color-2
+  );
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/**************************************/
+/* EOF */
+/**************************************/

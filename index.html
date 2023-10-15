@@ -2,582 +2,194 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.comp.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <script defer src="js/index.js"></script>
-
-    <title>Shadoww &mdash; Learning React</title>
+    <script defer type="module" src="js/index.js"></script>
+    <title>Suraj K</title>
   </head>
   <body>
-    <header class="header-container">
-      <div class="header-main-container">
-        <nav class="nav-container">
-          <ul class="nav-container__ul">
-            <li class="nav-container__li">
-              <a href="header-container" class="nav-container__link">Home</a>
-            </li>
-            <li class="nav-container__li">
-              <a href="section-projects" class="nav-container__link"
-                >Projects</a
-              >
-            </li>
-            <li class="nav-container__li">
-              <a href="section-contact" class="nav-container__link"
-                >Contact me</a
-              >
-            </li>
-          </ul>
-        </nav>
+    <header class="header" id="home">
+      <nav class="nav">
+        <div class="nav__links">
+          <a class="nav__link" href="home">Home</a>
+          <a class="nav__link" href="skills">Skills</a>
+          <a class="nav__link" href="projects">Projects</a>
+          <a class="nav__link" href="contact">Contact</a>
+        </div>
+      </nav>
+
+      <div class="header__container">
+        <div class="header__container--content">
+          <div class="header__text">
+            <p class="header__text--bg">Hi, I'm</p>
+            <p class="header__text--md">Suraj Kareppagol</p>
+            <p class="header__text--sm">
+              <span class="header__text--span">Learning,</span> and
+              <span class="header__text--span">building</span> projects from
+              scratch.
+            </p>
+          </div>
+
+          <div class="header__scroll">
+            <!-- SCROLL ICON -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="-5 -8 24 24"
+              width="24"
+              fill="currentColor"
+              class="icon__scroll"
+            >
+              <path
+                d="M7.071 5.314l4.95-4.95a1 1 0 1 1 1.414 1.414L7.778 7.435a1 1 0 0 1-1.414 0L.707 1.778A1 1 0 1 1 2.121.364l4.95 4.95z"
+              ></path>
+            </svg>
+            <!-- SCROLL ICON -->
+          </div>
+        </div>
       </div>
     </header>
 
-    <main>
-      <section class="section-main">
-        <div class="section-container">
-          <div class="img-container">
+    <section class="section-skill" id="skills">
+      <div class="section-skill__heading"><p>&#x23; tool set</p></div>
+
+      <div class="skill-container">
+        <!-- <div class="skill-card">
+          <div class="skill-card__imgs">
             <img
-              src="assets/images/background.png"
-              alt="author"
-              class="img-container__img"
+              class="skill-card__img"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
             />
           </div>
 
-          <div class="text-container">
-            <div class="text-container__container">
-              <span class="text-container__span text-container__span--1">
-                Hi,
-              </span>
-              <span class="text-container__span text-container__span--2"
-                >I'm
-              </span>
-              <span class="text-container__span text-container__span--3"
-                >Shadoww</span
-              >
+          <div class="skill-card__content">
+            <p class="skill-card__title">C</p>
+
+            <div class="skill-card__tags">
+              <p class="skill-card__tag">🛠️ 4 Projects</p>
+              <p class="skill-card__tag">😃 Intermediate</p>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <section class="section-projects" id="projects">
+      <div class="section-projects__heading"><p>&#x23; Projects</p></div>
+
+      <div class="project-container">
+        <!-- <div class="project-card">
+          <div class="project-card__imgs">
+            <img
+              class="project-card__img"
+              src="./output.gif"
+              alt="Rock Paper Scissor Game Photo"
+            />
+          </div>
+
+          <div class="project-card__content">
+            <div class="project-card__project-title">
+              <p>Rock Paper Scissor</p>
             </div>
 
-            <div class="additional-text-container">
-              <p class="additional-text-container__text">
-                Scroll Down, <span> For More Info</span>
-              </p>
-              <ion-icon
-                class="additional-text-container__down-icon"
-                name="arrow-down-outline"
-              ></ion-icon>
+            <div class="project-card__content-main">
+              <div class="project-card__details-container">
+                <p class="project-card__details-heading">📝 About</p>
+
+                <div class="project-card__details">
+                  <p class="project-card__detail">
+                    This is classic rock paper scissor.
+                  </p>
+                </div>
+              </div>
+
+              <div class="project-card__tools-container">
+                <p class="project-card__tools-heading">🛠️ Tools</p>
+
+                <div class="project-card__tools">
+                  <p class="project-card__tool">JavaScript</p>
+                </div>
+              </div>
+
+              <div class="project-card__links-container">
+                <p class="project-card__links-heading">🌐 Links</p>
+
+                <div class="project-card__links">
+                  <a class="project-card__link" href="#">GitHub</a>
+                </div>
+              </div>
             </div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="footer__heading"><p>&#x23; contact me</p></div>
+
+      <div class="footer__container">
+        <div class="footer__contact-container">
+          <form action="#" class="footer__form">
+            <input
+              placeholder="your name"
+              type="text"
+              name="user"
+              id="footer__input-user"
+            />
+            <input
+              placeholder="your email"
+              type="Email"
+              name=""
+              id="footer__input-email"
+            />
+            <textarea
+              placeholder="your message"
+              name="text"
+              id="footer__textarea"
+              cols="20"
+              rows="5"
+            ></textarea>
+            <button class="footer__btn">Send Message</button>
+          </form>
+        </div>
+
+        <div class="footer__links-container">
+          <p class="footer__link-heading">🌐 Social Links</p>
+
+          <div class="footer__links">
+            <a
+              class="footer__link"
+              href="https://www.linkedin.com/in/suraj-kareppagol-28ab8728b/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              class="footer__link"
+              href="https://github.com/surajkareppagol"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              class="footer__link"
+              href="https://www.youtube.com/@SurajKareppagol"
+              target="_blank"
+              >YouTube</a
+            >
+            <a
+              class="footer__link"
+              href="https://medium.com/@surajkareppagol.dev"
+              target="_blank"
+              >Medium</a
+            >
+            <a
+              class="footer__link"
+              href="https://dev.to/suraj_kareppagol"
+              target="_blank"
+              >Dev.to</a
+            >
           </div>
         </div>
-      </section>
-
-      <section class="section-projects">
-        <div class="projects-container">
-          <div class="projects-container__div">
-            <p class="projects-container__p">projects</p>
-          </div>
-          <div class="project-container">
-            <div class="project-container__cell project-container__cell--1">
-              <img
-                src="assets/images/tictactoe_1.png"
-                alt="tic tac toe game"
-                class="project-container__img"
-              />
-            </div>
-            <div class="project-container__cell project-container__cell--2">
-              <img
-                src="assets/images/tictactoe_2.gif"
-                alt="tic tac toe game"
-                class="project-container__img"
-              />
-            </div>
-            <div class="project-container__cell project-container__cell--3">
-              <h3 class="project-container__heading">Tic Tac Toe</h3>
-              <div class="project-container__text-container">
-                <p class="project-container__description">
-                  Tic Tac Toe is a classic game, here it is implemented as a web
-                  application&period;
-                </p>
-
-                <p class="project-container__description u-margin-top-medium">
-                  It provides both single player and multiplayer gameplay with
-                  light and dark mode support&period;
-                </p>
-
-                <p class="project-container__tools-heading">
-                  Tools Used&comma;
-                </p>
-                <div class="project-container__tool-container">
-                  <img
-                    src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-                    alt="html5 logo"
-                    class="project-container__tool project-container__tool--used"
-                  />
-
-                  <img
-                    src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
-                    alt="css3 logo"
-                    class="project-container__tool project-container__tool--used"
-                  />
-
-                  <img
-                    src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-                    alt="javascript logo"
-                    class="project-container__tool project-container__tool--used"
-                  />
-                </div>
-
-                <p class="project-container__repo-heading">
-                  Source code&comma;
-                </p>
-                <div class="project-container__repo">
-                  <a
-                    href="https://github.com/dev-shadoww/tic-tac-toe"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-                      alt="github logo"
-                      class="project-container__tool project-container__tool--link"
-                    />
-                  </a>
-
-                  <a
-                    href="https://dev-shadoww.github.io/tic-tac-toe"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white"
-                      alt="firefox logo"
-                      class="project-container__tool project-container__tool--link"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-container">
-            <div
-              class="project-container__cell project-container__cell--1 project-container__invert project-container__invert--1"
-            >
-              <img
-                src="assets/images/pix_create_1.png"
-                alt="pix create"
-                class="project-container__img"
-              />
-            </div>
-            <div
-              class="project-container__cell project-container__cell--2 project-container__invert project-container__invert--2"
-            >
-              <img
-                src="assets/images/pix_create_2.gif"
-                alt="pix create"
-                class="project-container__img"
-              />
-            </div>
-            <div
-              class="project-container__cell project-container__cell--3 project-container__invert project-container__invert--3"
-            >
-              <h3 class="project-container__heading">Pix Create</h3>
-              <div class="project-container__text-container">
-                <p class="project-container__description">
-                  Pix create is a web application to create pixel arts&period;
-                </p>
-
-                <p class="project-container__description u-margin-top-medium">
-                  It provides many tools and templates, and other new features
-                  are still in development&period;
-                </p>
-
-                <p class="project-container__tools-heading">
-                  Tools Used&comma;
-                </p>
-                <div class="project-container__tool-container">
-                  <img
-                    src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white"
-                    alt="html5 logo"
-                    class="project-container__tool project-container__tool--used"
-                  />
-
-                  <img
-                    src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white"
-                    alt="css3 logo"
-                    class="project-container__tool project-container__tool--used"
-                  />
-
-                  <img
-                    src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"
-                    alt="javascript logo"
-                    class="project-container__tool project-container__tool--used"
-                  />
-                </div>
-
-                <p class="project-container__repo-heading">
-                  Source code&comma;
-                </p>
-                <div class="project-container__repo">
-                  <a
-                    href="https://github.com/dev-shadoww/pix_create"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-                      alt="github logo"
-                      class="project-container__tool project-container__tool--link"
-                    />
-                  </a>
-
-                  <a
-                    href="https://dev-shadoww.github.io/pix_create"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white"
-                      alt="firefox logo"
-                      class="project-container__tool project-container__tool--link"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-container">
-            <div class="project-container__cell project-container__cell--1">
-              <img
-                src="assets/images/animation_in_c_1.svg"
-                alt="animation in c"
-                class="project-container__img"
-              />
-            </div>
-            <div class="project-container__cell project-container__cell--2">
-              <img
-                src="assets/images/animation_in_c_2.gif"
-                alt="animation in c"
-                class="project-container__img"
-              />
-            </div>
-            <div class="project-container__cell project-container__cell--3">
-              <h3 class="project-container__heading">Animation In C</h3>
-              <div class="project-container__text-container">
-                <p class="project-container__description">
-                  Animation in c is c library to animate ascii arts&period;
-                </p>
-
-                <p class="project-container__description u-margin-top-medium">
-                  It provides a public api which can be used to animate an ascii
-                  art, the plan is to develop it into a game and animation
-                  library&period;
-                </p>
-
-                <p class="project-container__tools-heading">
-                  Tools Used&comma;
-                </p>
-                <div class="project-container__tool-container">
-                  <img
-                    src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
-                    alt="c logo"
-                    class="project-container__tool project-container__tool--used"
-                  />
-                </div>
-
-                <p class="project-container__repo-heading">
-                  Source code&comma;
-                </p>
-                <div class="project-container__repo">
-                  <a
-                    href="https://github.com/dev-shadoww/animation_in_c"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-                      alt="github logo"
-                      class="project-container__tool project-container__tool--link"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-container">
-            <div
-              class="project-container__cell project-container__cell--1 project-container__invert project-container__invert--1"
-            >
-              <img
-                src="assets/images/besort_1.svg"
-                alt="besort"
-                class="project-container__img"
-              />
-            </div>
-            <div
-              class="project-container__cell project-container__cell--2 project-container__invert project-container__invert--2"
-            >
-              <img
-                src="assets/images/besort_2.png"
-                alt="besort"
-                class="project-container__img"
-              />
-            </div>
-            <div
-              class="project-container__cell project-container__cell--3 project-container__invert project-container__invert--3"
-            >
-              <h3 class="project-container__heading">BE sort</h3>
-              <div class="project-container__text-container">
-                <p class="project-container__description">
-                  BE sort short for Beginning End Sort is a sorting
-                  algorithm&period;
-                </p>
-
-                <p class="project-container__description u-margin-top-medium">
-                  It is inspired by sorting algorithms like quick sort and
-                  selection sort, although it is a new approach to sorting but
-                  it takes more time to sort the elements&period;
-                </p>
-
-                <p class="project-container__tools-heading">
-                  Tools Used&comma;
-                </p>
-                <div class="project-container__tool-container">
-                  <img
-                    src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
-                    alt="c logo"
-                    class="project-container__tool project-container__tool--used"
-                  />
-                </div>
-
-                <p class="project-container__repo-heading">
-                  Source code&comma;
-                </p>
-                <div class="project-container__repo">
-                  <a
-                    href="https://github.com/dev-shadoww/besort"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-                      alt="github logo"
-                      class="project-container__tool project-container__tool--link"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-container">
-            <div class="project-container__cell project-container__cell--1">
-              <img
-                src="assets/images/sudoku_1.png"
-                alt="sudoku"
-                class="project-container__img"
-              />
-            </div>
-            <div class="project-container__cell project-container__cell--2">
-              <img
-                src="assets/images/sudoku_2.png"
-                alt="sudoku"
-                class="project-container__img"
-              />
-            </div>
-            <div class="project-container__cell project-container__cell--3">
-              <h3 class="project-container__heading">sudoku</h3>
-              <div class="project-container__text-container">
-                <p class="project-container__description">
-                  The classic sudoku game&period;
-                </p>
-
-                <p class="project-container__description u-margin-top-medium">
-                  yep&comma; it is the sudoku game created in c language&period;
-                  i am trying to come up with a way to solve it
-                  automatically&comma; i have implemented to solve it
-                  horizontally and vertically but now both these needs to be
-                  combined&period;
-                </p>
-
-                <p class="project-container__tools-heading">
-                  Tools Used&comma;
-                </p>
-                <div class="project-container__tool-container">
-                  <img
-                    src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white"
-                    alt="c language"
-                    class="project-container__tool project-container__tool--used"
-                  />
-                </div>
-
-                <p class="project-container__repo-heading">
-                  Source code&comma;
-                </p>
-                <div class="project-container__repo">
-                  <a
-                    href="https://github.com/dev-shadoww/sudoku"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-                      alt="github logo"
-                      class="project-container__tool project-container__tool--link"
-                    />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section-contact">
-        <div class="contact-container">
-          <div class="form-main-container">
-            <p class="form-main-container__p">
-              fill out the form to contact me or,
-            </p>
-            <form action="#" class="form">
-              <div class="form__container">
-                <label for="name" class="form__label">name</label>
-                <input type="text" class="form__input" id="name" />
-              </div>
-
-              <div class="form__container">
-                <label for="email" class="form__label">e&mdash;mail</label>
-                <input type="email" class="form__input" id="email" />
-              </div>
-
-              <div class="form__container">
-                <label for="message" class="form__label">message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="20"
-                  rows="4"
-                  class="form__textarea"
-                ></textarea>
-              </div>
-
-              <div class="form__submit">
-                <button class="form__submit--btn">submit</button>
-
-                <p class="form__submit--message">
-                  Sorry&comma; this is not yet implemented&period;
-                </p>
-              </div>
-            </form>
-          </div>
-
-          <div class="contact-main-container">
-            <p class="contact-main-container__p">you can contact me here,</p>
-            <div class="contact-main-container__links">
-              <a
-                href="https://www.reddit.com/user/suraj_p_22"
-                class="contact-main-container__link"
-              >
-                <img
-                  src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white"
-                  alt="reddit"
-                  class="contact-main-container__social"
-                />
-              </a>
-
-              <a
-                href="https://twitter.com/DevShadoww"
-                class="contact-main-container__link"
-              >
-                <img
-                  src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white"
-                  alt="twitter"
-                  class="contact-main-container__social"
-                />
-              </a>
-
-              <a
-                href="https://github.com/dev-shadoww"
-                class="contact-main-container__link"
-              >
-                <img
-                  src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
-                  alt="github"
-                  class="contact-main-container__social"
-                />
-              </a>
-
-              <a href="#" class="contact-main-container__link">
-                <img
-                  src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white"
-                  alt="discord"
-                  class="contact-main-container__social"
-                />
-              </a>
-
-              <a
-                href="https://www.youtube.com/@shadowwOfficial"
-                class="contact-main-container__link"
-              >
-                <img
-                  src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white"
-                  alt="youtube"
-                  class="contact-main-container__social"
-                />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/suraj-kareppagol-004463248/"
-                class="contact-main-container__link"
-              >
-                <img
-                  src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white"
-                  alt="linkedin"
-                  class="contact-main-container__social"
-                />
-              </a>
-
-              <a
-                href="https://medium.com/@dev.shadoww"
-                class="contact-main-container__link"
-              >
-                <img
-                  src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white"
-                  alt="medium"
-                  class="contact-main-container__social"
-                />
-              </a>
-            </div>
-
-            <div class="author-text-container">
-              <h3 class="author-text-container__heading">
-                a bit about my self,
-              </h3>
-
-              <p class="author-text-container__p">
-                hi, i am shadoww, my real name is suraj, this web page took a
-                lot of time to create, i hope that you liked it.
-              </p>
-
-              <p class="author-text-container__p">
-                i am really obsessed with computers, and i am always learning
-                something new and i am hoping to create something good for me as
-                well as the community.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+      </div>
+    </footer>
   </body>
 </html>
