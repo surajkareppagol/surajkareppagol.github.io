@@ -8,6 +8,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @include responsive-size(small) {
+      padding: 8rem 2rem;
+    }
   }
 
   &__scroll {
@@ -28,6 +32,10 @@
     &:hover {
       transform: translateY(-1rem);
     }
+
+    @include responsive-size(small) {
+      width: 14rem;
+    }
   }
 }
 
@@ -47,6 +55,10 @@
   align-items: center;
   justify-content: flex-start;
   gap: 2rem;
+
+  @include responsive-size(small) {
+    gap: 4rem;
+  }
 }
 
 .nav__link {
@@ -58,6 +70,10 @@
 
   border-radius: 6px;
   padding: 0 1rem;
+
+  @include responsive-size(small) {
+    font-size: 4.6rem;
+  }
 }
 
 /**************************************/

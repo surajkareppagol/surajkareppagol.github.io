@@ -65,11 +65,20 @@ body {
   text-align: center; }
   .header__text--bg {
     font-size: 18rem; }
+    @media (max-width: 600px) {
+      .header__text--bg {
+        font-size: 20rem; } }
   .header__text--md {
     font-size: 12rem;
     margin-top: -2rem; }
+    @media (max-width: 600px) {
+      .header__text--md {
+        font-size: 14rem; } }
   .header__text--sm {
     font-size: 4rem; }
+    @media (max-width: 600px) {
+      .header__text--sm {
+        font-size: 5.6rem; } }
   .header__text--span {
     color: #231696;
     background-color: #fff;
@@ -83,6 +92,11 @@ body {
   text-decoration: underline;
   display: inline-block;
   border-radius: 11px; }
+  @media (max-width: 600px) {
+    .section-skill__heading p,
+    .section-projects__heading p,
+    .footer__heading p {
+      font-size: 12rem; } }
 
 /**************************************/
 /* EOF */
@@ -104,6 +118,9 @@ body {
     margin-left: -4rem; }
   .skill-card__title {
     font-size: 4rem; }
+    @media (max-width: 600px) {
+      .skill-card__title {
+        font-size: 4.6rem; } }
   .skill-card__tags {
     display: flex;
     align-items: center;
@@ -117,6 +134,10 @@ body {
     font-size: 2rem;
     padding: 0.4rem 1rem;
     border-radius: 11px; }
+    @media (max-width: 600px) {
+      .skill-card__tag {
+        font-size: 2.6rem;
+        padding: 0.6rem 1.4rem; } }
 
 /**************************************/
 /* EOF */
@@ -135,13 +156,25 @@ body {
   @media (max-width: 1250px) {
     .project-card {
       column-gap: 2.8rem; } }
+  @media (max-width: 600px) {
+    .project-card {
+      grid-template-columns: repeat(1, 1fr); } }
+  @media (max-width: 600px) {
+    .project-card__content {
+      margin: 4rem 0; } }
   .project-card__project-title p {
     font-size: 4rem;
     font-weight: 500;
     text-transform: capitalize; }
+    @media (max-width: 600px) {
+      .project-card__project-title p {
+        font-size: 5.6rem; } }
   .project-card__img {
     border-radius: 11px; }
     @media (max-width: 800px) {
+      .project-card__img {
+        width: 100%; } }
+    @media (max-width: 600px) {
       .project-card__img {
         width: 100%; } }
   .project-card__content-main {
@@ -150,6 +183,9 @@ body {
     align-items: center;
     gap: 1.4rem;
     margin-top: 1rem; }
+    @media (max-width: 600px) {
+      .project-card__content-main {
+        column-gap: 10rem; } }
   .project-card__tools-container, .project-card__details-container, .project-card__links-container {
     display: flex;
     justify-content: center;
@@ -164,20 +200,34 @@ body {
     align-self: baseline; }
   .project-card__tools-heading, .project-card__details-heading, .project-card__links-heading {
     font-size: 3rem; }
+    @media (max-width: 600px) {
+      .project-card__tools-heading, .project-card__details-heading, .project-card__links-heading {
+        font-size: 4.6rem; } }
   .project-card__tools, .project-card__details, .project-card__links {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    gap: 1rem; }
+    @media (max-width: 600px) {
+      .project-card__tools, .project-card__details, .project-card__links {
+        margin-top: 1.4rem; } }
   .project-card__tool, .project-card__link {
     display: inline-block;
     background-color: #231696;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding: 0.4rem 1rem;
     border-radius: 11px; }
+    @media (max-width: 600px) {
+      .project-card__tool, .project-card__link {
+        font-size: 3.2rem;
+        padding: 0.8rem 2rem; } }
   .project-card__detail {
     font-size: 2rem; }
+    @media (max-width: 600px) {
+      .project-card__detail {
+        font-size: 3.6rem; } }
   .project-card__link {
     text-decoration: none; }
 
@@ -192,6 +242,9 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  @media (max-width: 600px) {
+    .header__container--content {
+      padding: 8rem 2rem; } }
 
 .header__scroll {
   margin-top: 6rem; }
@@ -205,6 +258,9 @@ body {
   cursor: pointer; }
   .icon__scroll:hover {
     transform: translateY(-1rem); }
+  @media (max-width: 600px) {
+    .icon__scroll {
+      width: 14rem; } }
 
 .nav {
   max-width: 120rem;
@@ -219,6 +275,9 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 2rem; }
+  @media (max-width: 600px) {
+    .nav__links {
+      gap: 4rem; } }
 
 .nav__link {
   font-size: 2.8rem;
@@ -228,6 +287,9 @@ body {
   color: #231696;
   border-radius: 6px;
   padding: 0 1rem; }
+  @media (max-width: 600px) {
+    .nav__link {
+      font-size: 4.6rem; } }
 
 /**************************************/
 /* EOF */
@@ -275,6 +337,9 @@ body {
   @media (max-width: 600px) {
     .project-container {
       max-width: 110rem; } }
+  @media (max-width: 600px) {
+    .project-container {
+      row-gap: 6rem; } }
 
 /**************************************/
 /* EOF */
@@ -292,6 +357,9 @@ body {
     @media (max-width: 600px) {
       .footer__container {
         max-width: 110rem; } }
+    @media (max-width: 600px) {
+      .footer__container {
+        grid-template-columns: 1.2fr 0.8fr; } }
   .footer__contact-container {
     padding: 1rem 0;
     border-radius: 11px; }
@@ -317,6 +385,11 @@ body {
     .footer input:focus,
     .footer textarea:focus {
       outline: none; }
+    @media (max-width: 600px) {
+      .footer input,
+      .footer textarea {
+        font-size: 4.6rem;
+        padding: 1rem 2rem; } }
   .footer textarea {
     resize: none; }
   .footer__btn {
@@ -330,12 +403,19 @@ body {
     border: none;
     align-self: flex-start;
     cursor: pointer; }
+    @media (max-width: 600px) {
+      .footer__btn {
+        font-size: 4.6rem;
+        padding: 1rem 2rem; } }
   .footer__links-container {
     display: flex;
     flex-direction: column;
     gap: 2rem; }
   .footer__link-heading {
     font-size: 6rem; }
+    @media (max-width: 600px) {
+      .footer__link-heading {
+        margin-bottom: 0.4em; } }
   .footer__links {
     display: flex;
     align-items: center;
@@ -349,6 +429,10 @@ body {
     padding: 0.4rem 1rem;
     border-radius: 11px;
     text-decoration: none; }
+    @media (max-width: 600px) {
+      .footer__link {
+        font-size: 3.6rem;
+        padding: 1rem 2rem; } }
 
 /**************************************/
 /* EOF

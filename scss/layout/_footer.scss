@@ -15,6 +15,10 @@
     @include responsive-size(small) {
       max-width: 110rem;
     }
+
+    @include responsive-size(small) {
+      grid-template-columns: 1.2fr 0.8fr;
+    }
   }
 
   &__contact-container {
@@ -52,6 +56,11 @@
     &:focus {
       outline: none;
     }
+
+    @include responsive-size(small) {
+      font-size: 4.6rem;
+      padding: 1rem 2rem;
+    }
   }
 
   & textarea {
@@ -73,6 +82,11 @@
     align-self: flex-start;
 
     cursor: pointer;
+
+    @include responsive-size(small) {
+      font-size: 4.6rem;
+      padding: 1rem 2rem;
+    }
   }
 
   &__links-container {
@@ -84,6 +98,10 @@
 
   &__link-heading {
     font-size: 6rem;
+
+    @include responsive-size(small) {
+      margin-bottom: 0.4em;
+    }
   }
 
   &__links {
@@ -103,6 +121,11 @@
     border-radius: 11px;
 
     text-decoration: none;
+
+    @include responsive-size(small) {
+      font-size: 3.6rem;
+      padding: 1rem 2rem;
+    }
   }
 }
 

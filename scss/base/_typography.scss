@@ -15,16 +15,28 @@ body {
   &__text {
     &--bg {
       font-size: 18rem;
+
+      @include responsive-size(small) {
+        font-size: 20rem;
+      }
     }
 
     &--md {
       font-size: 12rem;
 
       margin-top: -2rem;
+
+      @include responsive-size(small) {
+        font-size: 14rem;
+      }
     }
 
     &--sm {
       font-size: 4rem;
+
+      @include responsive-size(small) {
+        font-size: 5.6rem;
+      }
     }
 
     &--span {
@@ -45,6 +57,10 @@ body {
   text-decoration: underline;
   display: inline-block;
   border-radius: 11px;
+
+  @include responsive-size(small) {
+    font-size: 12rem;
+  }
 }
 
 /**************************************/
