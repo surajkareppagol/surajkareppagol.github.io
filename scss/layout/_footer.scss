@@ -121,10 +121,15 @@
     border-radius: 11px;
 
     text-decoration: none;
+    transition: all 0.2s;
 
     @include responsive-size(small) {
       font-size: 3.6rem;
       padding: 1rem 2rem;
+    }
+
+    &:hover {
+      transform: translateY(-0.2rem);
     }
   }
 }

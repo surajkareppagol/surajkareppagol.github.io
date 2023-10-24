@@ -13,6 +13,8 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
 
+  column-gap: 4rem;
+
   @include responsive-size(large) {
     column-gap: 2.8rem;
   }
@@ -42,6 +44,7 @@
 
   &__img {
     border-radius: 11px;
+    width: 100%;
 
     @include responsive-size(special-800) {
       width: 100%;
