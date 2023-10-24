@@ -52,7 +52,7 @@ const skillData = [
   {
     tool: "HTML 5",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    projects: "4",
+    projects: "7",
     level: "Intermediate",
     alt: "HTML Logo",
   },
@@ -125,6 +125,13 @@ const skillData = [
     projects: "0",
     level: "Beginner",
     alt: "React Logo",
+  },
+  {
+    tool: "D3 JS",
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg",
+    projects: "0",
+    level: "Beginner",
+    alt: "D3 Logo",
   },
   {
     tool: "Android Studio",
