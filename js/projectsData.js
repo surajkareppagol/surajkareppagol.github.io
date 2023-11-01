@@ -43,6 +43,19 @@ const projectData = [
     ],
   },
   {
+    title: "Arch AUR Py",
+    img: "https://raw.githubusercontent.com/surajkareppagol/assets-for-projects/main/aur_arch.gif",
+    alt: "Arch Aur Py Image",
+    about: "Arch Linux AUR helper built with python.",
+    tools: ["python"],
+    links: [
+      {
+        link: "GitHub",
+        url: "https://github.com/surajkareppagol/arch-aur-py",
+      },
+    ],
+  },
+  {
     title: "Pix Creator Web",
     img: "https://raw.githubusercontent.com/surajkareppagol/assets-for-projects/main/pix_creator_web.gif",
     alt: "Pix Creator Web Image",
