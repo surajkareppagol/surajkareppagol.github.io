@@ -20,14 +20,6 @@ const skillData = [
     level: "Intermediate",
     alt: "Python Language Logo",
   },
-
-  {
-    tool: "Java",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-    projects: "1",
-    level: "Beginner",
-    alt: "Java Logo",
-  },
   {
     tool: "JavaScript",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
@@ -50,13 +42,6 @@ const skillData = [
     alt: "Bash Logo",
   },
   {
-    tool: "HTML 5",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    projects: "7",
-    level: "Intermediate",
-    alt: "HTML Logo",
-  },
-  {
     tool: "CSS 3",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
     projects: "7",
@@ -69,13 +54,6 @@ const skillData = [
     projects: "7",
     level: "Beginner",
     alt: "Sass Logo",
-  },
-  {
-    tool: "Docker",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-    projects: "0",
-    level: "Beginner",
-    alt: "Docker Logo",
   },
   {
     tool: "MongoDB",
@@ -127,20 +105,6 @@ const skillData = [
     alt: "React Logo",
   },
   {
-    tool: "D3 JS",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg",
-    projects: "0",
-    level: "Beginner",
-    alt: "D3 Logo",
-  },
-  {
-    tool: "Android Studio",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
-    projects: "none",
-    level: "Beginner",
-    alt: "Android Studio Logo",
-  },
-  {
     tool: "VS Code",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
     projects: "none",
@@ -148,25 +112,11 @@ const skillData = [
     alt: "VS Code Logo",
   },
   {
-    tool: "Vim",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
-    projects: "none",
-    level: "Beginner",
-    alt: "Vim Logo",
-  },
-  {
     tool: "Git",
     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     projects: "none",
     level: "Intermediate",
     alt: "Git Logo",
-  },
-  {
-    tool: "GitHub",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-    projects: "none",
-    level: "Intermediate",
-    alt: "GitHub Logo",
   },
   {
     tool: "InkScape",
